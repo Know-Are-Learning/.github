@@ -1,6 +1,7 @@
 name: แจ้ง Bug
 description: แจ้งพฤติกรรมของระบบที่ไม่ตรงกับสิ่งที่ควรเป็น
 title: "[Bug] "
+type: Bug
 body:
   - type: markdown
     attributes:

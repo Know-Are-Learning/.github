@@ -1,6 +1,7 @@
 name: ขอ Feature / งานพัฒนา
 description: ขอความสามารถใหม่หรือปรับ Flow เพื่อสร้างผลลัพธ์ทางธุรกิจ
 title: "[Feature] "
+type: Feature
 body:
   - type: markdown
     attributes:

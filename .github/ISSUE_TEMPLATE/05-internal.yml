@@ -1,6 +1,7 @@
 name: งาน Internal
 description: Meeting, Research, Documentation, Training หรืองานภายในที่ไม่ผูกกับ Product
 title: "[Internal] "
+type: Task
 body:
   - type: markdown
     attributes:
