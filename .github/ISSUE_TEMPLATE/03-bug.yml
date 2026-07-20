@@ -1,0 +1,26 @@
+name: แจ้ง Bug
+description: แจ้งพฤติกรรมของระบบที่ไม่ตรงกับสิ่งที่ควรเป็น
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: กรอกเฉพาะสิ่งที่รู้ Form จะช่วยจัดข้อมูลให้อยู่ในรูปแบบที่ทีม Tech รับช่วงต่อได้ทันที
+  - type: textarea
+    id: actual
+    attributes: { label: สิ่งที่เกิดขึ้นจริง }
+    validations: { required: true }
+  - type: textarea
+    id: reproduce
+    attributes: { label: ขั้นตอนที่ทำให้เกิด Bug }
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes: { label: สิ่งที่ควรเกิดขึ้น }
+    validations: { required: true }
+  - type: input
+    id: environment
+    attributes: { label: URL / Environment / Version }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: Error และหลักฐาน }

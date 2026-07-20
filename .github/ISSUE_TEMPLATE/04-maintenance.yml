@@ -1,0 +1,21 @@
+name: งาน Maintenance / Technical Debt
+description: Refactor, Upgrade, Security, Performance หรือดูแลระบบเดิม
+title: "[Maintenance] "
+body:
+  - type: markdown
+    attributes:
+      value: กรอกเฉพาะสิ่งที่รู้ Form จะช่วยจัดข้อมูลให้อยู่ในรูปแบบที่ทีม Tech รับช่วงต่อได้ทันที
+  - type: dropdown
+    id: category
+    attributes:
+      label: ประเภท
+      options: [Refactor / Technical Debt, Dependency / Framework Upgrade, Security, Performance, Infrastructure / Operations]
+    validations: { required: true }
+  - type: textarea
+    id: reason
+    attributes: { label: ทำไมต้องทำ, description: ความเสี่ยงหรือผลกระทบหากยังไม่ทำ }
+    validations: { required: true }
+  - type: textarea
+    id: outcome
+    attributes: { label: ผลลัพธ์ที่ถือว่าเสร็จ }
+    validations: { required: true }

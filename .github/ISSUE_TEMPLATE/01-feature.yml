@@ -1,0 +1,22 @@
+name: ขอ Feature / งานพัฒนา
+description: ขอความสามารถใหม่หรือปรับ Flow เพื่อสร้างผลลัพธ์ทางธุรกิจ
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: กรอกเฉพาะสิ่งที่รู้ Form จะช่วยจัดข้อมูลให้อยู่ในรูปแบบที่ทีม Tech รับช่วงต่อได้ทันที
+  - type: textarea
+    id: problem
+    attributes: { label: ปัญหาหรือความต้องการคืออะไร }
+    validations: { required: true }
+  - type: textarea
+    id: users
+    attributes: { label: ใครเป็นผู้ใช้งานหรือได้รับผลกระทบ }
+    validations: { required: true }
+  - type: textarea
+    id: outcome
+    attributes: { label: ผลลัพธ์ที่ต้องการ, description: เมื่อทำสำเร็จ ผู้ใช้หรือธุรกิจต้องทำอะไรได้ }
+    validations: { required: true }
+  - type: textarea
+    id: evidence
+    attributes: { label: ข้อมูลอ้างอิง, description: ลิงก์ เอกสาร ภาพ ตัวอย่าง หรือข้อมูล Impact }

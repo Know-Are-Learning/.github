@@ -1,0 +1,21 @@
+name: งาน Internal
+description: Meeting, Research, Documentation, Training หรืองานภายในที่ไม่ผูกกับ Product
+title: "[Internal] "
+body:
+  - type: markdown
+    attributes:
+      value: งานไม่ผูกกับ Product ควรสร้างใน Project.Internal เพื่อให้ข้อมูลเป็นมาตรฐานเดียวกัน
+  - type: dropdown
+    id: category
+    attributes:
+      label: ประเภทงานภายใน
+      options: [Meeting, Research, Documentation, Training, Process Improvement, Team Management]
+    validations: { required: true }
+  - type: textarea
+    id: objective
+    attributes: { label: วัตถุประสงค์ }
+    validations: { required: true }
+  - type: textarea
+    id: output
+    attributes: { label: Output หรือสิ่งที่ต้องส่งมอบ }
+    validations: { required: true }
