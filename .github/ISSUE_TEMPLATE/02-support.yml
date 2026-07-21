@@ -1,32 +1,51 @@
 name: แจ้งงาน Support
 description: แจ้งปัญหาการใช้งาน ระบบขัดข้อง หรือต้องการความช่วยเหลือ
 title: "[Support] "
+labels:
+  - "type:support"
 body:
   - type: markdown
     attributes:
-      value: กรอกเฉพาะสิ่งที่รู้ Form จะช่วยจัดข้อมูลให้อยู่ในรูปแบบที่ทีม Tech รับช่วงต่อได้ทันที
+      value: |
+        กรอกเฉพาะสิ่งที่รู้ Form จะช่วยจัดข้อมูลให้อยู่ในรูปแบบที่ทีม Tech รับช่วงต่อได้ทันที
   - type: textarea
     id: problem
-    attributes: { label: เกิดปัญหาอะไร }
-    validations: { required: true }
+    attributes:
+      label: เกิดปัญหาอะไร
+    validations:
+      required: true
   - type: textarea
     id: reproduce
-    attributes: { label: ทำอย่างไรจึงเกิดปัญหา, description: บอกทีละขั้น หรือแนบภาพ/วิดีโอ }
-    validations: { required: true }
+    attributes:
+      label: ทำอย่างไรจึงเกิดปัญหา
+      description: บอกทีละขั้น หรือแนบภาพ/วิดีโอ
+    validations:
+      required: true
   - type: textarea
     id: expected
-    attributes: { label: ผลที่ควรจะเป็น }
-    validations: { required: true }
+    attributes:
+      label: ผลที่ควรจะเป็น
+    validations:
+      required: true
   - type: dropdown
     id: impact
     attributes:
       label: ผลกระทบ
-      options: [ใช้งานไม่ได้ทั้งระบบ, กระทบผู้ใช้หลายคน, กระทบผู้ใช้บางคน, มีทางเลี่ยง]
-    validations: { required: true }
+      options:
+        - ใช้งานไม่ได้ทั้งระบบ
+        - กระทบผู้ใช้หลายคน
+        - กระทบผู้ใช้บางคน
+        - มีทางเลี่ยง ยังทำงานต่อได้
+    validations:
+      required: true
   - type: input
     id: environment
-    attributes: { label: URL / หน้าที่พบปัญหา }
-    validations: { required: true }
+    attributes:
+      label: URL / หน้าที่พบปัญหา
+    validations:
+      required: true
   - type: textarea
     id: evidence
-    attributes: { label: หลักฐานเพิ่มเติม, description: Screenshot, Error message และเวลาที่เกิด }
+    attributes:
+      label: หลักฐานเพิ่มเติม
+      description: Screenshot, Error message, เวลาที่เกิด หรือผู้ใช้ที่พบปัญหา
